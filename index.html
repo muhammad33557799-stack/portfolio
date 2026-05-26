@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="contact-buttons">
+          <button class="icon-btn"><i class="fas fa-phone-alt"></i></button>
+          <button class="icon-btn"><i class="fas fa-envelope"></i></button>
+          <button class="icon-btn"><i class="fas fa-comment-dots"></i></button>
+        </div>
+      </div>
+    </nav>
+    <!-- hero -->
+    <section class="hero gradient-background">
+      <div class="container pt-1 col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="./images/hero section my pic.png"
+              class="img-my d-block mx-10 img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="heading display-5 fw-bold lh-1 mb-3">I'm a Frontend Developer</h1>
+            <p class="para lead">
+            Hi, I'm Muhammad Ahmad — a Frontend Developer from 
+Lahore, Pakistan. I'm currently learning HTML, CSS, 
+and exploring AI automation to build smart, clean, 
+and modern web experiences.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button
+                type="button"
+                id="btn-1"
+                class="btn btn-primary btn-lg px-4 me-md-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chat-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                  />
+                </svg>
+                Start conversation
+              </button>
+              <button
+                type="button"
+                id="btn-2"
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                <img src="./images/arrow-down.svg" />
+                veiw Projects
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about">
+      <div class="container px-4 pb-5 mb-5">
+        <div
+          class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"
+        >
+          <div class="col d-flex flex-column align-items-start gap-2">
+            <h2 class="heading fw-bold">
+              Passionate About Building Meaningful Experiences
+            </h2>
+            <p class="para py-3">
+              I'm a Frontend Developer from Lahore, Pakistan, currently learning
+              HTML, CSS, and the fundamentals of programming. I believe in
+              building clean, functional websites that are both beautiful and
+              easy to use.
+            </p>
+
+            <p class="para py-3">
+              Along side web development, I'm exploring AI automation and prompt
+              engineering — learning how to get maximum results from AI tools to
+              work smarter and faster.
+            </p>
+
+            <p class="para py-3">
+              When I'm not coding, you'll find me travelling, driving, or
+              deep-diving into the latest tech and automation trends.
+            </p>
+          </div>
+
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col d-flex flex-column gap-2">
+                <div
+                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primar fs-4 rounded-3"
+                >
+                  <img src="./images/html-5.svg" />
+                </div>
+                <h4 class="skill-name fw-semibold mb-0 text-body-emphasis">
+                  HTML
+                </h4>
+                <p class="text-body-secoy">
+                  Building structured, semantic web pages.
+                </p>
+              </div>
+              <div class="col d-flex flex-column gap-2">
+                <div
+                  class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4 rounded-3"
+                >
+                  <img src="./images/css.svg" />
+                </div>
+                <h4 class="skill-name fw-semibold mb-0 text-body-emphasis">
+                  CSS
+                </h4>
+                <p class="text-body-secondary">
+                  Styling modern, responsive layouts.
+                </p>
+              </div>
+              <div class="col d-flex flex-column gap-2">
+                <div
+                  class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4 rounded-3"
+                >
+                  <img src="./images/java-script.svg" />
+                </div>
+                <h4 class="skill-name fw-semibold mb-0 text-body-emphasis">
+                  JavaScript
+                </h4>
+                <p class="text-body-secondary">
+                  Expanding my skills in JavaScript.
+                </p>
+              </div>
+              <div class="col d-flex flex-column gap-2">
+                <div
+                  class="feature-icon-small d-inline-flex align-items-center justify-content-center t fs-4 rounded-3"
+                >
+                  <img src="./images/python.svg" />
+                </div>
+                <h4 class="skill-name fw-semibold mb-0 text-body-emphasis">
+                  Python
+                </h4>
+                <p class="skill-benefit text-body-secondary">
+                  Expanding my skills in python.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Projects-->
+    <section class="projects">
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="heading display-4 fw-bold lh-1 mb-3 text-start">
+              My Projects
+            </h2>
+            <p class="para col-lg-10 fs-4 text-start">
+              A collection of projects I built while learning web development.
+            </p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <button class="project-btn btn btn-lg" type="submit">
+              Veiw All Projects →
+            </button>
+          </div>
+        </div>
+        <!-- album-->
+        <div class="album">
+
+  <div class="proj-card">
+    <img src="./images/pricing plan.png" alt="Pricing Page" />
+    <div class="proj-body">
+      <div class="proj-meta">
+        <p class="proj-tag py-2">HTML · CSS</p>
+        <span class="proj-num">01</span>
+      </div>
+      <h3 class="font py-2">Pricing Page</h3>
+      <p class="font-2">A clean pricing page layout with three tiers built using HTML and CSS with a modern card-based design.</p>
+      <a href="./links/personal.html">View Project →</a>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <img src="./images/resturant.png" alt="Restaurant Website" />
+    <div class="proj-body">
+      <div class="proj-meta">
+        <p class="proj-tag py-2">HTML · CSS</p>
+        <span class="proj-num">02</span>
+      </div>
+      <h3 class="font py-2">Restaurant Website</h3>
+      <p class="font-2">A responsive restaurant website built with HTML and CSS featuring a clean layout, menu section, and booking area.</p>
+      <a href="./links/index.html">View Project →</a>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <img src="./images/corior.png" alt="Moving Company Website" />
+    <div class="proj-body">
+      <div class="proj-meta">
+        <p class="proj-tag py-2">HTML · CSS</p>
+        <span class="proj-num">03</span>
+      </div>
+      <h3 class="font py-2">Moving Company Website</h3>
+      <p class="font-2">A multi-section website for a moving service including hero, services, and contact sections.</p>
+      <a href="./links/move.html">View Project →</a>
+    </div>
+  </div>
+
+</div>
+    </section>
+    <!-- contact -->
+    <!-- Footer-->
+     <section class="footer">
+        <div class="container">
+             <footer class="py-3 my-4"> 
+                <ul class="footer-links nav justify-content-center border-top pb-3 mb-3"> 
+                    <li class="nav-item"><a href="#" class="nav-link px-2 ">Home</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link px-2 ">About</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link px-2 ">Skills</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link px-2 ">Projects</a></li>
+                     <li class="nav-item"><a href="#" class="nav-link px-2 ">Contact</a></li>
+                     </ul> 
+                     <p class="text-center" style="color: white;">© 2026 Muhammad all right reserved</p>
+                     </footer> 
+                    </div>
+     </section>
+  </body>
+</html>
