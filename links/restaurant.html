@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT_8">
+        <title>Rstaurant</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .main{
+                margin: 0;
+                padding: 0;
+            }
+            nav{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                padding: 20px 50px;
+                color: white;
+            }
+            .nav-links{
+                display: flex;
+                list-style: none;
+                gap: 30px;
+            }
+            .nav-links a {
+                color: white;
+            }
+            .button{
+                border-radius: 15px;
+                padding: 15px;
+                background-color: #8A7650;
+                padding-right: 30px;
+                color: white;
+                cursor: pointer;
+            }
+            #hero{
+                background-image: url(./ChatGPT\ Restaurant\ interior\ cozy\ warm\ lighting.png);
+                background-size: cover;
+                background-position: center;
+                height: 50vh;
+
+            }
+            .title{
+                color: #ECE7D1;
+                padding-top: 50px;
+                padding-left: 50px;
+            }
+            .heading{
+                font-size: 3rem;
+            }
+            .second{
+                background-color: #8E977D;
+                color: white;
+                margin: 10px;
+            }
+            .menu-cards{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+            .card img{
+                height: 150px;
+                width: 150px;
+                text-align: center;
+                padding-bottom: 20px;
+                object-fit: cover;
+                border-top-left-radius: 100px;
+                border-top-right-radius: 100px;
+            }
+            .section-menu{
+                display: flex;
+                flex-direction: column;
+                background-color: #ECE7D1;
+            }
+            .section-menu p{
+                color: #8A7650;
+                font-size: 3rem;
+                text-align: center;
+                padding: 30px;
+            }
+            .chef-picks {
+                 font-size: 0.9rem !important;
+                 letter-spacing: 3px;
+                 padding: 10px !important;
+            }
+            .card{
+                background-color: #ECE7D1;
+                justify-content: center;
+                text-align: center;
+                padding:20px;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+               position: relative
+            }
+            .name-item{
+                font-size: 20px;
+                color: #8A7650;
+                padding-bottom: 10px;
+            }
+            .describe{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .price{
+                color:#8A7650;
+            }
+            .explore-menu{
+                background-color: #8E977D;
+                width: 250px;
+                margin-top: 24px;
+                margin-bottom: 30px;
+                align-self: center;
+            }
+            .float{
+                width: 400px;
+                height: 300px;
+                border-radius: 20px;
+                margin: 40px;
+            }
+  
+            .main-div{
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                background-color:#8E977D ;
+            }
+            .about{
+                display: flex;
+                flex-direction: column;
+            }
+            .story{
+                margin: 0;
+            }
+            .our-story{
+                padding-left: 20px;
+            }
+            .colour{
+                color: #ECE7D1;
+
+            }
+            .about-us{
+                color: black;
+                background-color:#DBCEA5 ;
+            }
+            footer {
+                  background-color: #6B5E3E;
+                  color: #ECE7D1;
+                  padding: 50px 60px;
+                  font-size: 13px;
+                 }
+            .footer-main{
+                display: flex;
+                justify-content: space-between;
+            }
+            .footer-ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            footer ul a {
+                text-decoration: none;
+                color: #ECE7D1;
+            }
+            .col{
+                display: flex;
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+            .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+}             
+                .insta{
+                    align-content: center;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    margin: 0;
+                    padding: 0;
+
+                }
+            .footer-bottom {
+                text-align: center;
+                border-top: 1px solid #ECE7D1;
+                margin-top: 30px;
+               padding-top: 20px;
+              }
+
+            
+            @media (max-width:768px){
+                nav{
+                    flex-direction: column;
+                    padding: 15px 10px;
+                }
+                .nav-links{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 15px;
+                    padding:0 ;
+                }
+                #hero{
+                    height: auto;
+                    min-height: 60vh;
+                }
+                .title{
+                    padding: 30px 20px;
+                }
+                .heading{
+                    font-size: 1.8rem;
+                }
+                .menu-cards{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .card{
+                    align-self: center;
+                }
+                .main-div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1px;
+                }
+
+
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+        <section id="hero">
+        <nav>
+            <div class="logo">TERRALUNA</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="reservation">Reservation</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+                <button class="button first">Book A Table</button>
+            </nav>
+         
+            <div class="title">
+                <p class="heading">Good Food Better Moments.</p>
+                <p>Thoughtfully sourced ingredients artfully </br>
+                 prepared. A cozy place to savor what matters</p>
+                 <button class="button second">VIEW OUR MENU →</button>
+            </div>
+        </section>
+
+
+          <section id="menu">
+              <div class="section-menu">
+                <p class="chef-picks">✿ CHEF'S PICKS ✿</p>
+                  <p>Menu Highlights</p>
+                  <hr class="menu-line">
+                     <div class="menu-cards">
+                          <div class="card">
+                              <img src="./mushroom.png">
+                              <div class="name-item">Wild Mushroom Soup</div>
+                               <div class="describe">Creamy mushroom soup with herbs and truffle oil</div>
+                               <div class="price">$9.50</div>
+                           </div>
+                           <div class="card">
+                              <img src="./pesto.png">
+                              <div class="name-item">Herp Pesto Pasta</div>
+                               <div class="describe">Homemade pesto, sun-dried totamtoes, pine nuts</div>
+                               <div class="price">$16.00</div>
+                           </div>
+                           <div class="card">
+                              <img src="./grilled salmon.png">
+                              <div class="name-item">Grilled Salmon</div>
+                               <div class="describe">Salmon with lemon butter, roasted vegetables</div>
+                               <div class="price">$22.00</div>
+                           </div>
+                           <div class="card">
+                              <img src="./cheesecake.png">
+                              <div class="name-item">Baked Cheesecake</div>
+                               <div class="describe">Classic cheesecake with berry compote</div>
+                               <div class="price">$8.50</div>
+                           </div>
+                     </div>
+                     <button class="button explore-menu">EXPLORE FULL MENU  →</button>
+              </div>
+
+
+        </section>
+
+        <section id="about">
+            <div class="main-div">
+                <div class="img-div"><img class="float" src="./ChatGPT Restaurant dining room arched windows.png"></div>
+                <div class="about">
+                <p class="our-story colour">OUR STORY</p>
+                <p class="heading story colour">Roated in nature, </br>made with care.</p>
+                <p class="detail">
+                    At Terraluna Kitchen, we believe great food</br> brings 
+                     people together. We honor the seasons,</br> support local
+                      growers, and create dishes that</br>
+                       nourish both body and soul.
+                </p>
+                <button class="button about-us">LEARN MORE ABOUT US</button>
+                </div>
+            </div>
+        </section>
+
+       <section class="footer-section">
+       <footer>
+        <div class="footer-main">
+            <div class="col">
+                <p>TERALUNA</p>
+                <p>-KITCHEN-</p>
+                <P>Good food. Warm heart.</br>Lasting memories</P>
+                <div class="social-icons">
+               <span class="insta">📷</span>
+              <span>👤</span>
+              <span>🍴</span>
+</div>
+
+            </div>
+            <div class="col">
+                 <p>QUICK LINKS</p>
+                <ul class="footer-ul quick-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <p>HOURS</p>
+                <ul class="footer-ul">
+                    <li>Mon-Thu</br>11:00 AM - 9:00PM</li>
+                    <li>fri-Sat</br>11:00 AM - 10:00PM</li>
+                    <li>Sun</br>11:00 AM - 11:30pM</li>
+                </ul>
+            </div>
+            <div class="col">
+                <p>CONTACT</p>
+                <ul class="footer-ul">
+                    <li>📞 (555) 123-4567</li>
+                    <li>✉️ info@teralunakitchen.com</li>
+                    <li>📍123 Azizia, Lane 3 Makkah </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Terraluna Kitchen. All rights reserved.</p>
+        </div>
+
+       </footer> 
+       </div>
+       </section>
+    </body>
+</html>

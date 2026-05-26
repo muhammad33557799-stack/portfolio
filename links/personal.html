@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pricing Plan</title>
+    <meta charset="UFT-8" />
+    <style>
+      body {
+        background-color: #ede9e6;
+        color: #5c4f4a;
+      }
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 150px;
+      }
+      .center {
+        text-align: center;
+        color: #5c4f4a;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        background-color: #ede9e6;
+        padding: 20px;
+        border: none;
+        border-radius: 5%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      .plan-name {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .price {
+        font-size: 30px;
+        font-weight: bolder;
+      }
+      span {
+        font-size: 16px;
+        font-weight: lighter;
+      }
+      .button {
+        background-color: #ede9e6;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 100%;
+        cursor: pointer;
+      }
+      #standard {
+        background-color: #5c766d;
+        color: #ffffff;
+      }
+      .badge {
+        background-color: #5c766d;
+        color: white;
+        padding: 5px 15px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto 10px auto;
+      }
+      #popular {
+        background-color: #ffffff;
+      }
+      .benefit li {
+        color: #5c766d;
+        list-style: none;
+        margin-bottom: 8px;
+      }
+      .tick {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #5c766d;
+        color: white;
+        font-size: 12px;
+      }
+      #cross {
+        background-color: #ef4444;
+      }
+      @media (max-width: 768px) {
+        .main {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple, Transparent Pricing</h1>
+    <p>Chose the plan that's right for you. Upgrade or downgrade anytime.</p>
+    <div class="main">
+      <div class="container">
+        <div class="plan-name center">Basic</div>
+        <div class="price center">$29<span>/mo</span></div>
+        <ul class="benefit">
+          <li><span class="tick">✓</span>Single User</li>
+          <li><span class="tick">✓</span>10 Projects</li>
+          <li><span class="tick">✓</span>10GB Storage</li>
+          <li><span class="tick">✓</span>Basic Analytics</li>
+          <li><span class="tick" id="cross">✕</span>Priority Support</li>
+        </ul>
+        <button class="button center">Get Started</button>
+      </div>
+
+      <div id="popular" class="container">
+        <div class="badge">✓ Most Popular</div>
+        <div class="plan-name center">Standard</div>
+        <div class="price center">$59<span>/mo</span></div>
+        <ul class="benefit">
+          <li><span class="tick">✓</span>Up to 5 Users</li>
+          <li><span class="tick">✓</span>Unlimited Projects</li>
+          <li><span class="tick">✓</span>50GB Storage</li>
+          <li><span class="tick">✓</span>Advanced Analytics</li>
+          <li><span class="tick">✓</span>Priority Support</li>
+        </ul>
+        <button id="standard" class="button center">Choose Standard</button>
+      </div>
+
+      <div class="container">
+        <div class="plan-name center">Premium</div>
+        <div class="price center">$99<span>/mo</span></div>
+        <ul class="benefit">
+          <li><span class="tick">✓</span>Unlimited Users</li>
+          <li><span class="tick">✓</span>All Features Included</li>
+          <li><span class="tick">✓</span>500GB Storage</li>
+          <li><span class="tick">✓</span>Dedicated Account Manager</li>
+          <li><span class="tick">✓</span>custom Integrations</li>
+        </ul>
+        <button class="button center">Go Premium</button>
+      </div>
+    </div>
+  </body>
+</html>
